@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "ring",
+    "price": 44.5,
+    "thumb": "http://localhost:7777/ring.jpg"
+  },
+  {
+    "id": 2,
+    "name": "ring",
+    "price": 44.5,
+    "thumb": "http://localhost:7777/ring2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "ring",
+    "price": 44.5,
+    "thumb": "http://localhost:7777/ring3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "ring",
+    "price": 44.5,
+    "thumb": "http://localhost:7777/ring4.jpg"
+  }
+]

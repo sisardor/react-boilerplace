@@ -1,1 +1,5 @@
-[]
+{
+  "app.components.Button.header": "This is the Button component !",
+  "app.components.HomePage.header": "This is HomePage component!",
+  "app.components.NotFoundPage.header": "This is NotFoundPage component!"
+}

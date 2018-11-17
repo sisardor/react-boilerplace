@@ -1,0 +1,148 @@
+/* .wrapper {
+  border: 1px solid black;
+	margin: 1px;
+}
+.header {
+	border: 1px solid black;
+	margin: 2px;
+	padding: 2px;
+}
+.left-sidebar, .aside {
+  border: 1px solid black;
+	margin: 2px;
+	padding: 2px;
+}
+.middle, .main {
+  border: 1px solid black;
+	margin: 2px;
+	padding: 2px;
+}
+.footer {
+  border: 1px solid black;
+	margin: 1px;
+	padding: 2px;
+} */
+.header {
+	background: tomato;
+}
+
+.middle, .main {
+	/* text-align: left; */
+  /* background: deepskyblue; */
+}
+.footer {
+  /* background: lightgreen; */
+}
+
+
+.main {
+  min-height: calc(100vh - 100px);
+	padding: 0.5em;
+}
+html { height: 100%; }
+
+body {
+    min-height:100%;
+    position:relative;
+    padding-bottom:100px;
+		overflow: hidden;
+    background: #e3e8ee;
+}
+.footer {
+  height: 50px;
+}
+
+
+
+.wrapper {
+	height:100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  .left-sidebar { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 6 0px; }
+  .left-sidebar { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 720px) {
+	.grid-container {
+	  display: grid;
+	  height: 100%;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr;
+	  grid-gap: 1px 1px;
+	  grid-template-areas: ". ." ". ." ". .";
+	}
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1920px) {
+	.grid-container {
+	  display: grid;
+	  height: 100%;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr;
+	  grid-gap: 1px 1px;
+	  grid-template-areas: ". . . ." ". . . ." ". . . .";
+	}
+
+}
+
+
+
+
+/* <Button text="" /> */
+.nav {
+	margin-left: 50px;
+}
+
+.nav > li {
+
+	display: inline-block;
+
+}
+.nav-item {
+	padding: 15px;
+}
+
+
+
+
+.db-SideNav-item-enter {
+    opacity: 0
+}
+
+.db-SideNav-item-enter.db-SideNav-item-enter-active {
+    opacity: 1;
+    transition: opacity .1s linear
+}
+
+.db-SideNav-item-leave {
+    opacity: 1
+}
+
+.db-SideNav-item-leave.db-SideNav-item-leave-active {
+    opacity: 0;
+    transition: opacity .1s linear
+}
+
+
+.special-u::after {
+	content: " - Remember this";
+}

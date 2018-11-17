@@ -28,6 +28,7 @@ module.exports = function addDevMiddlewares(app, webpackConfig) {
 
   app.get('*', (req, res) => {
     fs.readFile(path.join(compiler.outputPath, 'index.html'), (err, file) => {
+
       if (err) {
         res.sendStatus(404);
       } else {
